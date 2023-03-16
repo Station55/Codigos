@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+void funcionbase2 (){
+	float x=0, y=2;
+	for (int i=0; i<=10; i ++){
+		x = log2 (y);
+			y = y*2;
+		printf("|      %.0f      |   %.0f    |\n",y,x);
+	}
+	}
+	void funcionbase8 (){
+	float x=0, y=2;
+	for (int i=0; i<=10; i ++){
+		x = log2 (y)/log2(8);
+			y = y*2;
+		printf("|      %.0f      |   %.2f    |\n",y,x);
+	}
+	}
+void funcionbase16 (){
+	float x=0, y=2;
+	for (int i=0; i<=10; i ++){
+		x = log2 (y)/log2(8);
+			y = y*2;
+		printf("|      %.0f      |   %.2f    |\n",y,x);
+	}
+	}
+int main(void){
+int a=0;
+float b=0;
+printf("Los logaritmos de diferentes bases:\n");
+printf("Base 2:\n");
+printf("|   Valor   |  Log_2 |\n");
+funcionbase2();
+printf("\nBase 8:\n");
+printf("|   Valor   |  Log_8 |\n");
+funcionbase8();
+printf("\nBase 16:\n");
+printf("|   Valor   |   Log_16  |\n");
+funcionbase16();
+return 0;
+}
